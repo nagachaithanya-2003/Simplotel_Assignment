@@ -1,0 +1,406 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+body
+{
+    
+    background-color: aliceblue;
+    box-sizing: border-box;
+}
+
+/*------------------Navigation Bar----------------*/
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.logo-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    gap: 6px;
+}
+
+ul{
+    display: flex;
+    gap: 24px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 250px;
+}
+li{
+    cursor: pointer;
+}
+
+.logo{
+    height:60px;
+    width: 60px;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+}
+.whatsapp{
+    width: 35px;
+    height: 35px;
+}
+.facebook{
+    width: 28px;
+    height: 28px;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+/*---------------Hero Image-----------------*/
+.hero-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/*------------Title------------*/
+.name{
+background-color:black;
+color: white;
+font-size: 25px;
+font-weight: bold;
+width: 30.33%;
+padding:10px;
+background: linear-gradient(to right,  black 0%, grey 100%,grey 80%,grey 100%);
+text-align: center;
+position: absolute;
+left:38px;
+bottom:40px;
+}
+
+
+.hotel{
+    position: relative;
+    height:100%;
+    background-color: gray;
+}
+/* ----------------- summary -------------------- */
+.summary{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    background-color: grey;
+    height: 6rem;
+    width: 97.5%;
+    display: flex;
+    gap: 18rem;
+    padding-left: 2rem;
+    font-size:small;
+    margin-bottom: 30px;
+    margin-top: 0;
+    padding-top: 40px;
+    text-align: center;
+}
+/* ------------- features --------------------------- */
+img{
+    height: 100%;
+    width: 100%;
+}
+.features{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    gap: 30px;
+    margin: 30px;
+    font-size:x-small;
+    font-weight: bold;
+    padding-bottom: 200px;
+
+}
+h2{
+    margin-left: 2rem;
+    font-weight: bold;
+    font-size: 2em;
+}
+.feature_2{
+    text-align: center;
+}
+.feature_3{
+    text-align: right;
+}
+.learn{
+    height: 30px;
+    width: 100px;
+    color: aliceblue;
+    padding: 4px;
+    background-color: black;
+}
+
+
+
+@media screen and (min-width:0px) and (max-width:400px)
+{
+
+
+    /*------Navigation Bar-----------*/
+    ul{
+        display: flex;
+        position: relative;
+        left: -320px;
+        flex-direction: column;
+        gap:2px;
+        top:55px;
+        margin-bottom: 40px;
+
+    }
+    .logo{
+        position: relative;
+        top:-60px;
+     }
+ 
+     .logos{
+         position:relative;
+         right:380px;
+         bottom: 60px;
+ 
+     }
+
+     /*-------------Hero Image--------------*/
+
+    .hero-img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /*---------Title-----------*/
+    .name{
+        font-size: 8px;
+        width: 30%;
+        position:absolute;
+        left: 9px;
+        bottom: 12px;
+        padding:5px;
+    }
+
+    /*------------Summary------------*/
+
+    .summary{
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        gap:15px;
+        padding: 20px 0px ;
+    }
+
+    .learn{
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (min-width:401px) and (max-width:600px)
+{
+   
+    /*------Navigation Bar-----------*/
+    ul{
+        display: flex;
+        position: relative;
+        left: -320px;
+        flex-direction: column;
+        gap:2px;
+        top:55px;
+        margin-bottom: 40px;
+
+    }
+
+    .logo{
+       position: relative;
+       top:-60px;
+    }
+
+    .logos{
+        position:relative;
+        right:380px;
+        bottom: 60px;
+
+    }
+
+    /*-------------Hero Image--------------*/
+
+    .hero-img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /*---------Title-----------*/
+    .name{
+        font-size: 15px;
+        width: 25%;
+        position:absolute;
+        left: 25px;
+        bottom: 20px;
+    }
+
+    /*------------Summary------------*/
+
+    .summary{
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        gap:15px;
+        padding: 20px 0px ;
+    }
+
+    .learn{
+        cursor: pointer;
+    }
+
+
+   
+}
+ 
+@media screen and (min-width:601px) and (max-width:800px)
+{
+    /*------Navigation Bar-----------*/
+    ul{
+        display: flex;
+        position: relative;
+        left: -320px;
+        flex-direction: column;
+        gap:2px;
+        top:40px;
+        margin-bottom: 30px;
+
+    }
+
+    .logo{
+        position: relative;
+        top:-80px;
+        left:10px;
+     }
+
+     .logos{
+        position:relative;
+        right:400px;
+        bottom: 80px;
+
+    }
+
+    /*-------------Hero Image--------------*/
+
+    .hero-img{
+        width: 100%;
+        height: 100%;
+    }
+
+     /*---------Title-----------*/
+     .name{
+        font-size: 18px;
+        width: 28%;
+        position:absolute;
+        left: 18px;
+        bottom: 20px;
+    }
+
+    /*------------Summary------------*/
+
+    .summary{
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        gap:20px;
+        padding: 20px 0px ;
+    }
+
+    .learn{
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width:801px) and (max-width:1200px)
+{
+    /*------Navigation Bar-----------*/
+
+    .nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0px;
+        text-align: center;
+        margin-bottom: 4px;
+
+        
+    }
+
+    ul{
+        display: flex;
+        gap: 9px;
+        padding: 20px;
+        font-weight: bold;
+        font-size: 15px;
+        margin-left: -150px;
+
+    }
+
+    .logo{
+        position: relative;
+     }
+
+     .logos{
+        position:relative;
+        right: 80px;
+
+    }
+
+    /*-------------Hero Image--------------*/
+
+    .hero-img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /*---------Title-----------*/
+    .name{
+        font-size: 21px;
+        width: 30%;
+        position:absolute;
+        left: 21px;
+        bottom: 20px;
+    }
+
+     /*------------Summary------------*/
+
+     .summary{
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        gap:204px;
+        padding: 20px 0px ;
+    }
+
+    .learn{
+        cursor: pointer;
+    }
+
+
+}
+
+@media screen and (min-width:1201px) and (max-width:1800px)
+{
+ 
+    .summary{
+        width: 100%;
+        height: 100%;
+        gap:250px;
+        padding: 20px 0px ;
+    }
+
+    /*---------Title-----------*/
+    .name{
+        font-size: 25px;
+        width: 33%;
+        position:absolute;
+        left: 20px;
+        bottom: 50px;
+    }
+}
